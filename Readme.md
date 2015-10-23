@@ -23,7 +23,7 @@ This show file is intended to provide a template to start from as well as an out
 
 To use the glass touch settings you'll want to open the device manager, run the Automatic Device Discovery Wizard (top-had button) to discover the new glass touch. Then you'll right-click on the template Glass Touch and select _Copy Control Settings_ then right click on the newly discovered Glass Touch and select _Paste Control Settings_. The settings should be then transferred over.
 
-###Importing a new Patch
+###Importing a new patch
 
 When importing a new patch make sure that the _"Clear current Patch"_ checkbox is selected in the _Open_ dialog. This will clear out all of the existing fixtures before importing your new patch. 
 
@@ -33,7 +33,7 @@ When importing a new patch make sure that the _"Clear current Patch"_ checkbox i
 ### Adding new cues
 When adding new cues to the show file, make sure to use _Mutex Group 1_ for any cues that will be added to the main zone. If you would like to add additional test cues that will be cycled with the A button on the Butler XT2, use _Mutex group 2_. 
 
-### Ading new ActionPad buttons
+### Adding new ActionPad buttons
 If you add a new Action Pad button for a _Mutex Group 1_ (main zone) cue, make sure that its release action is set to fire **Trigger Label 2**. This will ensure that the color picker and any test cues are stopped automatically when a standard cue is played.
 
 If you are adding a new button for a test cue, you'll want to set the release action to **Trigger Label 3**
