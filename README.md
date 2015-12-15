@@ -1,6 +1,8 @@
 #Butler XT2 Standalone Starter Show
 This show file is intended to provide a template to start from as well as an out-of-the-box test show to send with samples and for preliminary testing by fixture before installers before a commissioning agent arrives on a job-site.
 
+>**Please note** this show file is optimized for working with RGB fixtures. The color picker and test cues may not work properly with other fixture types.
+
 ###Features
  - 10 Universes of RGB fixtures patched and neatly arranged.
  - 10 Sample looks designed to provide attractive content for a generic set of RGB fixtures.
@@ -16,6 +18,9 @@ This show file is intended to provide a template to start from as well as an out
  - There are triggers pre-configured to bring the grandmaster up a half-hour before sunrise & down at 2am.
  - There are triggers in place to manage the handoff between standard looks and the color picker.
  - Cue defaults are set to work nicely for offline show use (0 second fade, 2 second wait) so that static cues will trigger the glass touch buttons/action pad indicators will stay lit when selected.
+ - Utility scripts to assist in performing repetitive actions.
+ ---
+ 
 
 ###Usage
 
@@ -41,5 +46,39 @@ If you are adding a new button for a test cue, you'll want to set the release ac
 #### Test cues
 For the test cues I've included both RGB and CMY versions. The RGB cues work well for testing LED fixtures when you can view them directly. When a fixture is behind diffusion, however, it can be difficult to see a node that is missing a color because the spot below just becomes a bit dimmer. Using CMY, however, it becomes much more obvious because, instead of just having a dim spot the color will display wrong. For example if you are using magenta (red + blue) and a blue LED is out there will be one spot that is just red, standing out well through diffusion. 
 
+####  Utility Scripts
+>**Important!**
+>The included utility functions are dangerous and can overwrite and/or delete existing cues. These actoins can not be undone once performed. **Please read before using**.
+
+There are several utility scripts included in the show file, all of which are accessible via the "Utilities" action pad page. 
+
+##### ClearAllCuelists
+This function will clear all cues in all cuelists without changing any other settings  (Name, mutex ID, etc) in those cuelists. This is helpful to clear out everything before you begin programming so that you don't have to delete the sample cue in each cuelist before recording your new cue. 
+
+##### ClearSelectedCue
+This will clear the currently selected cuelist, leaving all other settings (Name, mutex ID, etc) intact. 
+
+##### DeleteAllGroups
+Removes all existing groups from the show file. This is helpful when starting to program to remove all of the smaple groups without having to delete them each individually.
+
+##### generateColorPickerCues
+This will generate a red, green, and blue cuelist for use in the color picker. A dialog will be displayed asking for the first cuelist to use and the group that you'd like to use. By defaul the first group is used and the first cuelist (red) is set to 13 to match the layout of the *Starter Show* showfile.
+
+##### generateTestCues
+This will generate a series of 5 test cues. A dialog box will ask for the mutex group ID, fixture group, and first cuelist. It will then generate the following test cues:
+	1. RGB Fade - Red, Green, and Blue cues with a 1 second fade and 2 second wait between each.
+	2. RGB Snap - Red, Green, and Blue cues with a 0 second fade and a  1 second wait between each.
+	3. CMY Fade - Cyan, Magenta, and Yellow cues with a 1 second fade and 2 second wait between each.
+	4. CMY Snap -  Cyan, Magenta, and Yellow cues with a 0 second fade and a  1 second wait between each.
+	5. All White - All fixtures 100% white. 
+
+The cues are programmed to provide a seamless loop in offline mode.
+
+By default the Mutex group ID is set to 2 and the first cuelist is 16 to match the layout of the *Starter Show* showfile.
+
+All of these utility scripts are accessible via buttons on the Utilities page of the Action Pad. You must first click the "I Understand" button under the warning before the buttons become visible. 
+
+**It is highly reccommended** that you remove the utility page & scripts from the show file before turning it over to the end0client.
+ 
 
 
