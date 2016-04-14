@@ -162,9 +162,9 @@ All of these utility scripts are accessible via buttons on the Utilities page of
 ##### setButtonNames
 This script will copy the names of cuelists and apply them to their respective buttons in the Action Pad. 
 
-To make this script work, each playback button in the Action Pad has a script ID set to `QLx`, where `x` is the number of the cuelist it represents. The script will loop through all numbers between 0 and 100; if a button exists for that cuelist, the name will be copied to it.
+To make this script work, each playback button in the Action Pad has a script ID set to `QLx`, where `x` is the number of the cuelist it represents. The script will loop through all numbers between 1 and 100; if a button exists for that cuelist, the name will be copied to it.
 
-If you wish to add more buttons, just copy an existing button, change the Action to play back the desired cuelist and then the script ID to match it. Next time you run the script, the new button will be included.
+If you wish to add more buttons just copy an existing button, change the Action to play back the desired cuelist and then the script ID to match it. Next time you run the script, the new button will be included.
 
 
 
