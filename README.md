@@ -153,11 +153,18 @@ The cues are programmed to provide a seamless loop in offline mode.
 By default the Mutex group ID is set to 2 and the first cuelist is 16 to match the layout of the *Starter Show* showfile.
 
 
-#### setCuelistNamesByFirstCueName
+##### setCuelistNamesByFirstCueName
 This will present a dialog box asking for start and end cuelists. All cuelists in this range will have their name changed to match that of the first cue in each list. Any empty cuelits will be ignored. 
 
 
 All of these utility scripts are accessible via buttons on the Utilities page of the Action Pad. You must first click the "I Understand" button under the warning before the buttons become visible.
+
+##### setButtonNames
+This script will copy the names of cuelists and apply them to their respective buttons in the Action Pad. 
+
+To make this script work, each playback button in the Action Pad has a script ID set to `QLx`, where `x` is the number of the cuelist it represents. The script will loop through all numbers between 0 and 100; if a button exists for that cuelist, the name will be copied to it.
+
+If you wish to add more buttons, just copy an existing button, change the Action to play back the desired cuelist and then the script ID to match it. Next time you run the script, the new button will be included.
 
 
 
