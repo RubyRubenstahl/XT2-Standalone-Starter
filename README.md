@@ -6,7 +6,7 @@ This show file is intended to provide a template to start from, as well as an ou
 
 >**Please note** this show file is optimized for working with RGB fixtures. The color picker and test cues may not work properly with other fixture types. All other features should work fine without any modifications.
 
-
+![screenshot](http://ruby-lighting.com/github/XT2 Start Pack/Actipn Pad.JPG)
 
 ###Features
 
