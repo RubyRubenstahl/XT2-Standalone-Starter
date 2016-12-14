@@ -30,9 +30,13 @@ This show file is intended to provide a template to start from, as well as an ou
 
  - Mutex Groups are pre-configured.
 
+ - Color presets for Red, Green, Blue, Cyan, Magenta, Yellow, Warm White, and Cool White
+
  - Cuelist 1 is set to play on startup.
 
  - There are triggers pre-configured to bring the grandmaster up a half-hour before sunrise & down at 2am.
+
+ - Triggers are included for commonly observerd Holidays & Observances - floating holidays are taken care of for you. 
 
  - There are triggers in place to manage the handoff between standard looks and the color picker.
 
@@ -43,7 +47,8 @@ This show file is intended to provide a template to start from, as well as an ou
  ---
 
  
-
+### The Patch
+The patch contains 10 universes of generic RGB fixtures neatly arranged. The rows of fixtures are 32 column wide, making it easy to find the first fixture on each injector box when when working with Traxon Allegro fixtures. 
 
 
 ###Usage
@@ -90,9 +95,16 @@ If you are adding a new button for a test cue, you'll want to set the release ac
 
 #### Test cues
 
-For the test cues I've included both RGB and CMY versions. The RGB cues work well for testing LED fixtures when you can view them directly. When a fixture is behind diffusion, however, it can be difficult to see a node that is missing a color because the spot below just becomes a bit dimmer. Using CMY, however, it becomes much more obvious because, instead of just having a dim spot the color will display wrong. For example if you are using magenta (red + blue) and a blue LED is out there will be one spot that is just red, standing out well through diffusion. 
+For the test cues I've included both RGB and CMY versions. The RGB cues work well for testing LED fixtures when you can view them directly. When a fixture is behind diffusion, however, it can be difficult to see a node that is missing a color because the spot below just becomes a bit dimmer. Using CMY, however, it becomes much more obvious because, instead of just having a dim spot the color will display wrong. For example if you are using magenta (red + blue) and a blue LED is out there will be one spot that is just red, standing out well through diffusion.
 
+#### Holiday triggers
+This show file is configured to provide scheduling of holidays with as little extra work as possible.
 
+The holiday triggers are arranged into two sections. All triggers with a comment beginning with "HOLIDAY: " are intended to have their action changed by the user to perform the desired function.
+
+The triggers with a comment starting with "FLOATING: " are not intended to be edited by the user. They will call the trigger label corresponding to the "HOLIDAY: " trigger. This allows for the action to be defined only in one place for each holiday.
+
+Holiday/observance cues are fired at 5:01 am. There is also a Daily Show trigger that is defined (but without an action) to start the daily look at 5:00 am . With this arrangement, the daily look will be started every day, but overridden by the holiday look if there is one that day.
 
 ####  Utility Scripts
 
