@@ -1,14 +1,14 @@
-#Butler XT2 Standalone Starter Show
+# Butler XT2 Standalone Starter Show
 
 This show file is intended to provide a template to start from, as well as an out-of-the-box test show to send with samples and for preliminary testing by fixture before installers before a commissioning agent arrives on a job-site.
 
 
 
->**Please note** this show file is optimized for working with RGB fixtures. The color picker and test cues may not work properly with other fixture types. All other features should work fine without any modifications.
+>** Please note** this show file is optimized for working with RGB fixtures. The color picker and test cues may not work properly with other fixture types. All other features should work fine without any modifications.
 
 ![screenshot](http://ruby-lighting.com/github/XT2 Start Pack/Actipn Pad.JPG)
 
-###Features
+### Features
 
  - 10 Universes of RGB fixtures patched and neatly arranged.
 
@@ -51,11 +51,11 @@ This show file is intended to provide a template to start from, as well as an ou
 The patch contains 10 universes of generic RGB fixtures neatly arranged. The rows of fixtures are 32 column wide, making it easy to find the first fixture on each injector box when when working with Traxon Allegro fixtures. 
 
 
-###Usage
+### Usage
 
 
 
-####Glass Touch
+#### Glass Touch
 
 
 
@@ -63,7 +63,7 @@ To use the glass touch settings you'll want to open the device manager, run the 
 
 
 
-####Importing a new patch
+#### Importing a new patch
 
 
 
@@ -71,7 +71,7 @@ When importing a new patch make sure that the _"Clear current Patch"_ checkbox i
 
 
 
->**Important!**
+> **Important!**
 
 >When importing a new patch you will need to update the color picker cues in **QL13, QL14, and QL15** (red, green, and blue) in order for the color picker to work properly.
 
